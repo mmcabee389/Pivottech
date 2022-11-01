@@ -1,0 +1,36 @@
+[{
+  "id": 1,
+  "first_name": "Westley",
+  "last_name": "Woofenden",
+  "email": "wwoofenden0@tripadvisor.com",
+  "gender": "Male",
+  "ip_address": "20.92.94.120"
+}, {
+  "id": 2,
+  "first_name": "Odelle",
+  "last_name": "Zorener",
+  "email": "ozorener1@jimdo.com",
+  "gender": "Female",
+  "ip_address": "143.153.150.36"
+}, {
+  "id": 3,
+  "first_name": "Elfie",
+  "last_name": "Nast",
+  "email": "enast2@hibu.com",
+  "gender": "Genderfluid",
+  "ip_address": "140.108.202.185"
+}, {
+  "id": 4,
+  "first_name": "June",
+  "last_name": "Paul",
+  "email": "jpaul3@unicef.org",
+  "gender": "Genderqueer",
+  "ip_address": "252.196.38.206"
+}, {
+  "id": 5,
+  "first_name": "Valentin",
+  "last_name": "Kneale",
+  "email": "vkneale4@freewebs.com",
+  "gender": "Male",
+  "ip_address": "64.93.186.197"
+}]
