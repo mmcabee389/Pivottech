@@ -1,0 +1,97 @@
+PS C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd> git switch add-ci
+A       .gitignore
+A       calculator/main.go
+A       cmd/marvel/.env
+PS C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd> mkdir .github/workflows
+
+
+    Directory: C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd\.github
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/25/2022   5:50 PM                workflows
+
+PS C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd> git commit -am "Add CI"
+warning: in the working copy of 'calculator/calculator.go', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'calculator/calculator_test.go', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cmd/calculator/main.go', LF will be replaced by CRLF the next time Git touches it
+[add-ci 2902f48] Add CI
+ 7 files changed, 201 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 calculator/calculator.go
+ create mode 100644 calculator/calculator_test.go
+ create mode 100644 cmd/.github/workflows/default.yaml
+ create mode 100644 cmd/calculator/main.go
+ create mode 100644 cmd/marvel/.env
+PS C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd> git push
+fatal: The current branch add-ci has no upstream branch.
+To push the current branch and set the remote as upstream, use
+    git push --set-upstream origin add-ci
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd> git push --set-upstream origin add-ci
+To https://github.com/mmcabee389/Pivottech.git
+ ! [rejected]        add-ci -> add-ci (fetch first)
+error: failed to push some refs to 'https://github.com/mmcabee389/Pivottech.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd> git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (5/5), done.
+Unpacking objects: 100% (5/5), 1.72 KiB | 9.00 KiB/s, done.
+From https://github.com/mmcabee389/Pivottech
+ * [new branch]      add-ci     -> origin/add-ci
+   665eda7..3b8f308  main       -> origin/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> add-ci
+
+PS C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd> git push --set-upstream origin add-ci
+To https://github.com/mmcabee389/Pivottech.git
+error: failed to push some refs to 'https://github.com/mmcabee389/Pivottech.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd> git fetch
+PS C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd> git push --set-upstream origin add-ci
+To https://github.com/mmcabee389/Pivottech.git
+ ! [rejected]        add-ci -> add-ci (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mmcabee389/Pivottech.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd> git status
+On branch add-ci
+Changes not staged for commit:
+  (use "git restore <file>..." to discard changes in working directory)
+
+Untracked files:
+        ../go.mod
+        ../go.sum
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd> git push
+fatal: The current branch add-ci has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin add-ci
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd> git restore
+fatal: you must specify path(s) to restore
+PS C:\Users\micha\go\src\github.com\mmcabee389\Pivottech\cmd>
